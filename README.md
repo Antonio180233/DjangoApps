@@ -26,5 +26,7 @@ python manage.py runserver
 
 7- Abre localhost:8000
 
+EL CODIGO FINAL SE ENCUENTRA EN EL BRANCH: FINAL_FILES
+
 ---------------------------------------------------------------------------
 Aqui sera agregado un link para probar en clase:
