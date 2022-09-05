@@ -1,6 +1,6 @@
 "# DjangoSocialApp" 
 Esta es una aplicacion similar a tuiter, se pueden crear usuarios, se pueden hacer publicaciones, se pueden borrar las publicaciones del usuario en turno
-se pueden editar los perfiles, agregar imagenes de perfil.
+se pueden editar los perfiles, agregar imagenes de perfil, no se puede dar like ni hacer comentarios.
 
 Debido al tiempo, cuenta aun con algunos errores, pero el potencial de proyecto para la aplicacion de la analitica es muy amplio, sugerir personas a quienes seguir podria ser un gran sistema de recomendacion.
 
