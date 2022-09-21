@@ -1,0 +1,35 @@
+{% extends 'twitter/layout.html' %}
+
+{% block content %}
+<body class="login-page">
+    <div class="twitter-login-box">
+        <header>
+            <img src="../static/img/twitter-brands.svg" alt="twitter logo">
+            <h1>Sign in</h1>
+        </header>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="input-wrapper">
+                <label for="user-name-id">Username</label>
+                {{ form.username }}
+            </div>
+
+            <div class="input-wrapper">
+                <label for="password-id">Password</label>
+                {{ form.password }}
+            </div>
+            {% if form.errors %}
+            <p style="color:red">⚠️The user or password is incorrect or does not exist⚠️</p>
+            {% endif %}
+
+            <button class="twitter-btn" style="color:black">Login</button>
+        </form>
+
+        <div class="footer">
+            <a href="#">Forgot your Password?</a> . 
+            <a href="{% url 'register' %}" style="color:#8E44AD ">Sign up to Social Book</a>
+        </div>
+
+    </div>
+{% endblock content %}

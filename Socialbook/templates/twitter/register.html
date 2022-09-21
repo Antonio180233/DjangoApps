@@ -1,0 +1,44 @@
+{% extends 'twitter/layout.html' %}
+
+{% block content %}
+<body class="login-page">
+    <div class="twitter-login-box">
+        <header>
+            <img src="../static/img/twitter-brands.svg" alt="Social Book logo">
+            <h2>Let's get started</h2>
+        </header>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="input-wrapper">
+                <label for="user-name-id">First Name</label>
+                {{ form.first_name }}
+            </div>
+            <div class="input-wrapper">
+                <label for="user-name-id">Username</label>
+                {{ form.username }}
+            </div>
+            <div class="input-wrapper">
+                <label for="user-name-id">Email</label>
+                {{ form.email }}
+            </div>
+
+            <div class="input-wrapper">
+                <label for="password-id">Password</label>
+                {{ form.password1 }}
+            </div>
+            <div class="input-wrapper">
+                <label for="password-id">Confirm Password</label>
+                {{ form.password2 }}
+            </div>
+
+            <button class="twitter-btn" style="color:black""">Get in</button>
+        </form>
+
+        <div class="footer">
+            <a href="{% url 'home' %}" style="color:#8E44AD ">Already registered? Login</a>
+        </div>
+
+    </div>
+
+{% endblock content %}
