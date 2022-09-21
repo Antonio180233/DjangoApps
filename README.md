@@ -21,12 +21,10 @@ python manage.py makemigrations python manage.py migrate
 5-Crea un superusuario.
 python manage.py createsuperuser
 
-6-Corre el servidor.
-python manage.py runserver
+name
+email
+password
 
-7- Abre localhost:8000
+6- El app esta preparada para ser lanzada en Azure, solo debes ajustar los parametros de la DB, el host permitido, generar un archivo con la contraseña puesto que puse un get en vez de un string con la contraseña. 
 
 
-
----------------------------------------------------------------------------
-Aqui sera agregado un link para probar en clase:
